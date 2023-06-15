@@ -1,5 +1,6 @@
 package com.kotlin.learn.myapplication.api
 
+import androidx.viewbinding.BuildConfig
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -7,33 +8,22 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-object ApiConfig {
+class ApiConfig {
 
-    private const val BASE_URL = ""
-
-    private val client: Retrofit
-        get() {
-            val gson = GsonBuilder()
-                .setLenient()
-                .create()
-
-            val interceptor = HttpLoggingInterceptor()
-            interceptor.level = HttpLoggingInterceptor.Level.BODY
-
-            val client : OkHttpClient = OkHttpClient.Builder()
-                .addInterceptor(interceptor)
-                .connectTimeout(40, TimeUnit.SECONDS)
-                .readTimeout(40, TimeUnit.SECONDS)
-                .writeTimeout(40, TimeUnit.SECONDS)
+    companion object {
+        fun getApiService(): ApiService {
+            val loggingInterceptor = HttpLoggingInterceptor().apply {
+                level = if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY else HttpLoggingInterceptor.Level.NONE
+            }
+            val client = OkHttpClient.Builder()
+                .addInterceptor(loggingInterceptor)
                 .build()
-
-            return Retrofit.Builder()
-                .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create(gson))
+            val retrofit = Retrofit.Builder()
+                .baseUrl("https://yanuar-dot-capstoneproject-388212.as.r.appspot.com/api/recomenu/")
+                .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()
+            return retrofit.create(ApiService::class.java)
         }
-
-    val instanceRetrofit : ApiService
-        get() = client.create(ApiService::class.java)
+    }
 }

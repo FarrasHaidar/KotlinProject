@@ -1,2 +1,0 @@
-ninja: Entering directory `D:\BangkitAS\recoMenu2\OpenCV\.cxx\Debug\1o6a4306\x86'
-ninja: no work to do.

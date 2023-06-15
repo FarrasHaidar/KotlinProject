@@ -72,11 +72,11 @@
         app:layout_constraintTop_toBottomOf="@+id/container" />
 
     <Button
-        android:id="@+id/btn_action"
+        android:id="@+id/btn_action_sign_in"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="145dp"
         android:background="@drawable/custom_sign_in_button"
         android:text="@string/sign_in_button"
         android:textAllCaps="false"
@@ -97,7 +97,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_action">
+        app:layout_constraintTop_toBottomOf="@+id/btn_action_sign_in">
 
         <TextView
             android:id="@+id/label_register"
@@ -108,7 +108,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/btn_register"
+            android:id="@+id/tv_direct_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"

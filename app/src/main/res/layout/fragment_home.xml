@@ -15,14 +15,14 @@
         android:layout_centerHorizontal="true"
         android:scaleType="centerCrop"
         android:src="@drawable/food_promo"
-        app:layout_constraintBottom_toTopOf="@+id/btn_action"
+        app:layout_constraintBottom_toTopOf="@+id/btn_action_to_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_action"
+        android:id="@+id/btn_action_to_menu"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="48dp"

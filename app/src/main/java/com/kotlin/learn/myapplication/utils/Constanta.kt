@@ -8,7 +8,7 @@ object Constanta {
 
     const val preferenceName = "Settings"
     const val preferenceDefaultValue = "Not Set"
-    const val preferenceDefaultDateValue = "2000/04/30 00:00:00"
+    const val preferenceDefaultDateValue = "2002/07/30 00:00:00"
 
     val emailPattern = Regex("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")
 

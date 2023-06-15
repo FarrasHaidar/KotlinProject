@@ -5,7 +5,6 @@
     <string name="sign_in_now">Sign in now</string>
     <string name="please_sign_in">Please sign in to continue our app</string>
     <string name="text_login">Login</string>
-
     <string name="menu_title_bottom_nav_home">Home</string>
     <string name="validation_invalid_email">Email format is invalid</string>
     <string name="validation_invalid_password">Password format is invalid</string>
@@ -17,7 +16,7 @@
     <string name="sign_in_button">Sign in</string>
     <string name="sign_up">Sign Up</string>
     <string name="question_account">Don’t have an account?</string>
-    <string name="sign_up_button">Sign up</string>
+    <string name="sign_up_button">Sign Up</string>
     <string name="sign_up_now">Sign up now</string>
     <string name="click_the_button">Click the button below for sign up</string>
     <string name="pesan">Order</string>
@@ -54,5 +53,54 @@
     <string name="text_mau_makan_apa">Mau Makan Apa ?</string>
     <string name="text_search_food">Search Food</string>
     <string name="rekomendasi">Rekomendasi</string>
+    <string name="error_email_invalid">Invalid email format</string>
+    <string name="error_unauthorized">Wrong Email</string>
+    <string name="btn_daftar_member">Daftar</string>
+    <string name="tv1_reco_menu_member">Reco Menu Member</string>
+    <string name="tv_keuntungan_members_offer">Keuntungan</string>
+    <string name="tv_benefit_rekomendasi_menu">Rekomendasi Menu</string>
+    <string name="tv_benefit_diskon_menarik">Diskon Menarik</string>
+    <string name="tv_benefit_potongan_cashback">Potongan Cashback</string>
+    <string name="keuntungan_members_offer">Keuntungan</string>
+    <string name="silahkan_scan_barcode_qris">Silahkan Scan Barcode QRIS</string>
+    <string name="total_harga">Total Harga</string>
+    <string name="harga_makanan">Rp50.000</string>
+    <string name="tv_pembayaran_berhasil">Selamat, Pembayaran Anda Berhasil</string>
+    <string name="invoice">Invoice</string>
+    <string name="invoice_number">Invoice Number: #3311222</string>
+    <string name="invoice_date">Invoice Date: 30 June 2023</string>
+    <string name="items">Items:</string>
+    <string name="item_1_product">Item 1: Sate Maranggi - Rp40.000</string>
+    <string name="item_2_product">Item 2: Es Buah - Rp10.000</string>
+    <string name="total_menu">Total: Rp50.000</string>
+    <string name="selesai_invoice">Selesai</string>
+    <string name="register">Register</string>
+
+    <integer-array name="data_photo">
+        <item>@drawable/ice_kiwi</item>
+        <item>@drawable/sate_maranggi</item>
+        <item>@drawable/sate_taichan</item>
+        <item>@drawable/wedang_jahe</item>
+        <item>@drawable/spageti</item>
+        <item>@drawable/bakmi_dewa</item>
+    </integer-array>
+
+    <string-array name="nama_menu">
+        <item>Ice Kiwi</item>
+        <item>Sate Maranggi</item>
+        <item>Sate Taichan</item>
+        <item>Wedang Jahe</item>
+        <item>Spaghetti</item>
+        <item>Bakmi Dewa</item>
+    </string-array>
+
+    <string-array name="harga_menu">
+        <item>Rp10.0000</item>
+        <item>Rp40.000</item>
+        <item>Rp30.000</item>
+        <item>Rp8.000</item>
+        <item>Rp35.000</item>
+        <item>Rp25.000</item>
+    </string-array>
 
 </resources>

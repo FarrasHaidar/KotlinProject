@@ -11,6 +11,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-       
+
+        val intentLogin = Intent(this, AuthActivity::class.java)
+        startActivity(intentLogin)
+
+        if(OpenCVLoader.initDebug()) Log.d("LOADED", "SUCCESS")
+        else Log.d("LOADED", "error")
+
+
     }
 }
